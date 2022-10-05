@@ -1,0 +1,24 @@
+.fluid-section{
+	background-color: black;
+	height: 44rem;
+}
+
+.two-divider {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 0.1fr 0.8fr 1fr;
+	justify-content: space-around;
+	& img{
+		max-width: 300px;
+	}
+}
+
+.col{
+	margin: 0 auto;
+	margin-top: 24%;
+	font-size: xx-large;
+}
+
+#two{
+	background-color: $primary;
+}
