@@ -1,0 +1,18 @@
+.btn-coordenadas {
+    background-color: $secondary;
+    border-radius: 10px;
+    color:  $white;
+    font-size: xx-large;
+	margin: 1rem 0;
+    padding: 0.5em;
+	position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.lista-coordenadas{
+    color: $secondary;
+    left: 0;
+    position: absolute;
+    top: 6rem;
+}

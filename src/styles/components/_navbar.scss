@@ -1,12 +1,12 @@
 .nav-container {
-	background-color: black;
+	background-color: $primary;
 	color: $white;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	position: sticky;
 	top: 0;
-	height: 7em;
+	height: 5%;
 	z-index: 1;
 }
 
@@ -15,7 +15,7 @@
 }
 
 #logo {
-	width: 5em;
+	width: 2.5em;
 }
 
 .nav-item {
@@ -23,29 +23,29 @@
 	box-sizing: content-box;
 	padding: 10%;
 	&:hover {
-		color: $gray;
+		color: $secondary;
 	}
 }
 
 #links {
-	background-color: $secondary;
-	border-radius: 0 0 20px 0;
+	background-color: $primary;
 	// color: $white;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 7rem;
+	top: 4.55rem;
 	left: 0;
-	width: 19rem;
+	width: 100%;
+	max-width: 20rem;
 	a {
+		// max-width: 20rem;
 		color: $white;
-		font-size: 1.5em;
-		font-weight: 400;
-		padding: 10% 5%;
-		width: auto;
+		padding: 4% 15%;
+		// margin: 4% 10%;
+		// width: 100%;
 		justify-content: flex-start;
 		&:hover {
-			background-color: $primary;
+			background-color: $secondary;
 			color: $white;
 		}
 	}
@@ -53,7 +53,7 @@
 
 .nav-text-link {
 	color: $white;
-	font-size: large;
+	font-size: x-large;
 	font-weight: 500;
 	text-decoration: none;
 	margin: 0;

@@ -1,42 +1,40 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import whiteLogo from '../assets/LogoAACircNeg.png';
+
+import logo1 from '../assets/htmlLogo.png';
+import logo2 from '../assets/cssLogo.png';
+import logo4 from '../assets/bootstrapLogo.png';
+import logo5 from '../assets/reactLogo.png';
+import logo6 from '../assets/nodejsLogo.png';
+import polygonSvg from '../assets/low-poly-grid2.svg';
 
 export const Home = () => {
 	return (
 		<>
-			<section className='fluid-section'>
+			<section className='fluid-section' style={{ backgroundImage: `url(${polygonSvg})` }}>
 				<div className='two-divider'>
-					<div></div>
+					{/* <div></div> */}
 					<div className='col'>
-						<h1>¡Bienvenido a mi portafolio personal!</h1>
+						<h2>¡Bienvenido a mi portafolio personal!</h2>
 						<br />
 						<h4>
-							Aquí colocaré links a proyectos y demos de proyectos que he
-							realizado con los cuales podrás darte una idea de lo que puedo
-							ofrecerte
+							Dentro de este sitio encontrarás links y demos de proyectos que he desarrollado
 						</h4>
 					</div>
 					<div className='col'>
-						<img src={logo} alt="Alan Albert's logo" />
+						<img className='animate__animated animate__fadeIn logoHome' src={whiteLogo} alt="Alan Albert's logo" />
 					</div>
 				</div>
 			</section>
-			<section id='two' className='fluid-section'>
-				<div className='two-divider'>
-					<div></div>
-					<div className='col'>
-						<h1>¡Bienvenido a mi portafolio personal!</h1>
-						<br />
-						<h4>
-							Aquí colocaré links a proyectos y demos de proyectos que he
-							realizado con los cuales podrás darte una idea de lo que puedo
-							ofrecerte
-						</h4>
+			<section className='fluid-section-alt'>
+					<div className='logosDiv'>
+						<img src={logo1} alt='logo' className='animate__animated animate__zoomIn codeLogo'/>
+						<img src={logo2} alt='logo' className='animate__animated animate__zoomIn animate__delay-1s codeLogo-alt'/>
+						<img src={logo4} alt='logo' className='animate__animated animate__zoomIn animate__delay-2s codeLogo'/>
+						<img src={logo5} alt='logo' className='animate__animated animate__zoomIn animate__delay-3s codeLogo-alt'/>
+						<img src={logo6} alt='logo' className='animate__animated animate__zoomIn animate__delay-4s codeLogo'/>
+						<h3 className='title animate__animated animate__zoomIn animate__delay-5s'>Experiencia Full Stack</h3>
 					</div>
-					<div className='col'>
-						<img src={logo} alt="Alan Albert's logo" />
-					</div>
-				</div>
 			</section>
 		</>
 	);
