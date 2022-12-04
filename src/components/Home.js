@@ -3,9 +3,9 @@ import whiteLogo from '../assets/LogoAACircNeg.png';
 
 import logo1 from '../assets/htmlLogo.png';
 import logo2 from '../assets/cssLogo.png';
-import logo4 from '../assets/bootstrapLogo.png';
+import logo4 from '../assets/mongoLogo.png';
 import logo5 from '../assets/reactLogo.png';
-import logo6 from '../assets/nodejsLogo.png';
+import logo6 from '../assets/nodeLogo.png';
 import polygonSvg from '../assets/low-poly-grid2.svg';
 
 export const Home = () => {
@@ -15,10 +15,10 @@ export const Home = () => {
 				<div className='two-divider'>
 					{/* <div></div> */}
 					<div className='col'>
-						<h2>¡Bienvenido a mi portafolio personal!</h2>
+						<h2>¡Bienvenido al portafolio personal de Alan Albert!</h2>
 						<br />
 						<h4>
-							Dentro de este sitio encontrarás links y demos de proyectos que he desarrollado
+							Un sitio con links y demos de proyectos que he desarrollado
 						</h4>
 					</div>
 					<div className='col'>

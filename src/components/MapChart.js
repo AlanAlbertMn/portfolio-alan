@@ -52,6 +52,7 @@ export const MapChart = () => {
 						<Marker key={index} coordinates={[el.Latitud, el.Longitud]}>
 							<circle
 								className='animate__animated animate__fadeInDown animate__faster'
+								style={{"--animate-duration": "0.5s"}}
 								r={4}
 								fill='#F53'
 							/>

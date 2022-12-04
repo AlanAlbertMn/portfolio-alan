@@ -23,11 +23,21 @@
 	}
 }
 
+.redes{
+	width: 50%;
+	& a{
+		// background-color: red;
+		color: $white;
+		text-decoration: none;
+	}
+}
+
 .img-text{
 	align-items: center;
 	display: flex;
 	gap: 5%;
 	margin: 4% auto;
+	width: 100%;
 }
 
 .small-title{

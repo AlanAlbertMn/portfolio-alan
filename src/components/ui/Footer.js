@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
 import logoCirc from '../../assets/LogoAASF.png';
 
 export const Footer = () => {
@@ -15,10 +16,14 @@ export const Footer = () => {
 						</p>
 					</div>
 				</div>
-				<div className='col'>
+				<div className='col redes'>
 					<h5 className='small-title'>Contacto</h5>
 					<div className='img-text'>
-						<p className='paragraph'>Próximamente...</p>
+
+							
+							<FaLinkedin />
+						<a href='https://www.linkedin.com/in/alan-rodrigo-albert-mor%C3%A1n-81764714a/' target='_blank' rel="noreferrer" className='paragraph'>Alan Albert</a>
+							
 					</div>
 				</div>
 			</div>
