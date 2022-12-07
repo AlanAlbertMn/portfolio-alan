@@ -1,0 +1,37 @@
+.container {
+	align-items: center;
+	// display: flex;
+	margin: 2em 0;
+	// margin: 2em 20%;
+	justify-content: center;
+	// flex-wrap: wrap;
+}
+
+.albums {
+	margin: 2% 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.album-container {
+	// display: flex;
+	text-align: center;
+	// background-color: red;
+	height: 25em;
+	width: 100%;
+}
+
+#div-busqueda {
+	display: flex;
+	justify-content: center;
+	margin: 1% 0;
+}
+
+#busqueda {
+	font-size: xx-large;
+	margin: 0 auto;
+	text-align: center;
+	width: 96%;
+}
