@@ -1,0 +1,48 @@
+.container-pendientes{
+    margin: 3% 5%;
+}
+
+.inputPendiente{
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto 1.5em auto;
+    justify-content: center;
+    font-size: xx-large;
+    padding: 5px 1.5em;
+    width: 20em;
+}
+
+.pendiente{
+    align-items: center;
+    // background-color: red;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    padding: 0.7rem 1.5rem;
+    width: 50%;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 10em;
+}
+
+#icon{
+    cursor: pointer;
+}
+
+#pendiente-name{
+    width: 30%;
+}
+
+.done{
+    background-color: green;
+}
+.ongoing{
+    background-color: goldenrod;
+}
+.pending{
+    background-color: crimson;
+}

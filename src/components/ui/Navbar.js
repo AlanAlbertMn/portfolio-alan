@@ -29,6 +29,12 @@ export const Navbar = () => {
 			</div>
 			{linksDisplay && (
 				<div id='links'>
+					<Link className='nav-text-link' to='/spotify' onClick={desactivarlinksDisplay}>
+						Spotify
+					</Link>
+					<Link className='nav-text-link' to='/pendientes' onClick={desactivarlinksDisplay}>
+						Pendientes
+					</Link>
 					<Link className='nav-text-link' to='/mapchart' onClick={desactivarlinksDisplay}>
 						MapChart
 					</Link>
