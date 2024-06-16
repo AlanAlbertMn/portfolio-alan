@@ -1,32 +1,30 @@
 .container {
 	align-items: center;
-	// display: flex;
-	margin: 2em 0;
-	// margin: 2em 20%;
+	margin: 2em 1em;
 	justify-content: center;
-	// flex-wrap: wrap;
 }
 
 .albums {
-	margin: 2% 0;
+	margin: 2% 1%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 20px;
-	flex-wrap: wrap;
 }
 
 .album-container {
-	// display: flex;
 	text-align: center;
-	// background-color: red;
 	height: 25em;
 	width: 100%;
+	& a img {
+		max-height: 300px;
+		max-width: 350px;
+	}
 }
 
 #div-busqueda {
 	display: flex;
 	justify-content: center;
-	margin: 1% 0;
+	margin: 2rem 0;
 }
 
 #busqueda {

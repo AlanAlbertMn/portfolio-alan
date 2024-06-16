@@ -11,19 +11,22 @@ export const Footer = () => {
 					<div className='img-text'>
 						<img src={logoCirc} alt='logo Alan Albert' height='40px' />
 						<p className='paragraph'>
-							Soy un desarrollador con experiencia en Javascript para el
-							desarrollo de front-ends con React y back-ends con Node.js
+							Soy un ingeniero especializado en desarrollar sitios web con React y Node.js
 						</p>
 					</div>
 				</div>
 				<div className='col redes'>
 					<h5 className='small-title'>Contacto</h5>
 					<div className='img-text'>
-
-							
-							<FaLinkedin />
-						<a href='https://www.linkedin.com/in/alan-rodrigo-albert-mor%C3%A1n-81764714a/' target='_blank' rel="noreferrer" className='paragraph'>Alan Albert</a>
-							
+						<FaLinkedin />
+						<a
+							href='https://www.linkedin.com/in/alan-rodrigo-albert-mor%C3%A1n-81764714a/'
+							target='_blank'
+							rel='noreferrer'
+							className='paragraph'
+						>
+							Alan Albert
+						</a>
 					</div>
 				</div>
 			</div>
