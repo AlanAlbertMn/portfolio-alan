@@ -7,16 +7,16 @@ export const Footer = () => {
 		<section id='footer'>
 			<div className='container two-divider-footer'>
 				<div className='col'>
-					<h5 className='small-title'>Acerca de mí</h5>
+					<h5 className='small-title'>About me</h5>
 					<div className='img-text'>
 						<img src={logoCirc} alt='logo Alan Albert' height='40px' />
 						<p className='paragraph'>
-							Soy un ingeniero especializado en desarrollar sitios web con React y Node.js
+							Full Stack Engineer specialized on React and Node.js
 						</p>
 					</div>
 				</div>
 				<div className='col redes'>
-					<h5 className='small-title'>Contacto</h5>
+					<h5 className='small-title'>Contact</h5>
 					<div className='img-text'>
 						<FaLinkedin />
 						<a

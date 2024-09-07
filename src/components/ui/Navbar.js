@@ -33,13 +33,13 @@ export const Navbar = () => {
 						Spotify
 					</Link>
 					<Link className='nav-text-link' to='/pendientes' onClick={desactivarlinksDisplay}>
-						Pendientes
+						Checklist
 					</Link>
 					<Link className='nav-text-link' to='/mapchart' onClick={desactivarlinksDisplay}>
 						MapChart
 					</Link>
 					<Link className='nav-text-link' to='/proyectos' onClick={desactivarlinksDisplay}>
-						Varios
+						Random
 					</Link>
 				</div>
 			)}
@@ -50,7 +50,7 @@ export const Navbar = () => {
 			</div>
 			<div className='options flex center'>
 				<Link id='contacto' className='nav-text-link' to={{pathname:'/home', hash:'#footer'}}>
-					CONTACTO
+					CONTACT
 				</Link>
 			</div>
 		</div>
