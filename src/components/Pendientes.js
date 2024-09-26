@@ -10,7 +10,8 @@ export const Pendientes = () => {
     async function getPendientes() {
         axios
             .get('http://localhost:4000/pendientes')
-            .then(response => setPendientes(response.data));
+            .then(response => setPendientes(response.data))
+            .catch(setPendientes([]));
     }
 	useEffect(() => {
 		getPendientes();
@@ -18,7 +19,7 @@ export const Pendientes = () => {
 
     const submitPendiente = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4000/pendientes', {name: pendiente.current.value, estado: "PENDIENTE"}).then(() => getPendientes())
+        axios.post('http://localhost:4000/pendientes', {name: pendiente.current.value, estado: "PENDING"}).then(() => getPendientes())
         pendiente.current.value = '';
     }
     
@@ -75,7 +76,7 @@ export const Pendientes = () => {
             <input className='inputPendiente' placeholder='Ingresa tu pendiente aquí' formAction='submit' ref={pendiente}></input>
 			{pendientes ? (
                 pendientes.map((el, index) => (
-                    <div className={`pendiente ${el.estado === 'PENDIENTE' ? 'pending' : el.estado === 'EN PROGRESO' ? 'ongoing' : 'done'}`} key={index}>
+                    <div className={`pendiente ${el.estado === 'PENDING' ? 'pending' : el.estado === 'EN PROGRESO' ? 'ongoing' : 'done'}`} key={index}>
 						<h1 id='pendiente-name'>{el.name}</h1>
 						<h1>{el.estado}</h1>
 						<div className='icons'>

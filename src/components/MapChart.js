@@ -8,8 +8,7 @@ import {
 import { getData } from '../hooks/getCoordinates';
 import Swal from 'sweetalert2';
 
-const geoUrl =
-	'https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json';
+const geoUrl = "/features.json";
 
 export const MapChart = () => {
 	const [data, setData] = useState([]);
