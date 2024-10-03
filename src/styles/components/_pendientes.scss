@@ -12,14 +12,19 @@
     width: 20em;
 }
 
+.stateAndButtons {
+    display: flex;
+    text-align: center;
+}
+
 .pendiente{
     align-items: center;
-    // background-color: red;
+    border-radius: 5px;
     justify-content: space-between;
     display: flex;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 0.7rem 1.5rem;
-    width: 50%;
+    width: 80%;
 }
 
 .icons{
@@ -38,11 +43,11 @@
 }
 
 .done{
-    background-color: green;
+    background-color: darkgreen;
 }
 .ongoing{
     background-color: goldenrod;
 }
 .pending{
-    background-color: crimson;
+    background-color: darkred;
 }

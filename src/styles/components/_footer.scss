@@ -1,6 +1,6 @@
-.container {
-	// background-color: $primary;
-	margin: 2em 1rem;
+#footer {
+	background-color: $primary;
+	height: max-content;
 }
 
 .two-divider-footer {
@@ -9,15 +9,6 @@
 	justify-content: center;
 	& img{
 		max-width: 300px;
-	}
-}
-
-.col{
-	height: 150px;
-	margin: 3% 0;
-	text-align: left;
-	.paragraph{
-		font-size: 25px;
 	}
 }
 

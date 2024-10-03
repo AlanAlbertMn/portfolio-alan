@@ -5,7 +5,7 @@ import logoCirc from '../../assets/LogoAASF.png';
 export const Footer = () => {
 	return (
 		<section id='footer'>
-			<div className='container two-divider-footer'>
+			<div className='two-divider-footer'>
 				<div className='col'>
 					<h5 className='small-title'>About me</h5>
 					<div className='img-text'>

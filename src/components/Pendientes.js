@@ -4,45 +4,50 @@ import { FaCheck, FaEdit, FaTrash, FaUndoAlt } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 
 export const Pendientes = () => {
-	const [pendientes, setPendientes] = useState([]);
+    const [pendientes, setPendientes] = useState([]);
+    const [errorLocal, setError] = useState("")
     const pendiente = useRef()
 
     async function getPendientes() {
-        axios
-            .get('http://localhost:4000/pendientes')
-            .then(response => setPendientes(response.data))
-            .catch(setPendientes([]));
+        axios.get('http://localhost:4000/pendientes')
+            .then((response) => {
+                setPendientes(response.data)
+            })
+            .catch(error => {
+                setError(error.message)
+            });
     }
-	useEffect(() => {
-		getPendientes();
-	}, []);
+
+    useEffect(() => {
+        getPendientes();
+    }, []);
 
     const submitPendiente = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4000/pendientes', {name: pendiente.current.value, estado: "PENDING"}).then(() => getPendientes())
+        axios.post('http://localhost:4000/pendientes', { name: pendiente.current.value, estado: "PENDING" }).then(() => getPendientes())
         pendiente.current.value = '';
     }
-    
+
     const deletePendiente = (elemento) => {
         console.log(elemento);
         Swal.fire({
-            title: `¿Seguro de que quieres borrar '${elemento.name}'?`,
-            text: "Se perderá para siempre el pendiente.",
+            title: `Are you sure you want to delete '${elemento.name}'?`,
+            text: "This pending will be gone forever.",
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: '¡Sí, borrarlo!'
+            confirmButtonColor: '#f00',
+            cancelButtonColor: '',
+            confirmButtonText: 'Yes, delete'
         }).then((result) => {
             if (result.isConfirmed) {
                 axios.delete(`http://localhost:4000/pendientes/${elemento._id}`).then(() => getPendientes())
                 Swal.fire(
-                'Borrado!',
-                'El pendiente se ha eliminado.',
-                'success'
-              )
+                    'Deleted',
+                    'This pending has been deleted.',
+                    'success'
+                )
             }
-          })
+        })
     }
 
     const terminarPendiente = (elemento) => {
@@ -50,47 +55,48 @@ export const Pendientes = () => {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: `${elemento.name} completado`,
+            title: `${elemento.name} completed`,
             showConfirmButton: false,
             timer: 1500
-          })
+        })
     }
-    
+
     const desacompletarPendiente = (elemento) => {
         axios.put(`http://localhost:4000/pendientes/desacompletar/${elemento._id}`).then(() => getPendientes())
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: `${elemento.name} marcado como pendiente`,
+            title: `${elemento.name} marked as pending`,
             showConfirmButton: false,
             timer: 1500
-          })
+        })
     }
 
-	console.log(pendientes);
+    console.log(pendientes);
 
-	return (
+    return (
         <form onSubmit={submitPendiente}>
-
-		<div className='container-pendientes'>
-            <input className='inputPendiente' placeholder='Ingresa tu pendiente aquí' formAction='submit' ref={pendiente}></input>
-			{pendientes ? (
-                pendientes.map((el, index) => (
-                    <div className={`pendiente ${el.estado === 'PENDING' ? 'pending' : el.estado === 'EN PROGRESO' ? 'ongoing' : 'done'}`} key={index}>
-						<h1 id='pendiente-name'>{el.name}</h1>
-						<h1>{el.estado}</h1>
-						<div className='icons'>
-							<FaCheck id='icon' onClick={() => terminarPendiente(el)}/>
-							<FaEdit id='icon'/>
-							<FaUndoAlt id='icon' onClick={() => desacompletarPendiente(el)}/>
-							<FaTrash onClick={() => deletePendiente(el)} id='icon'/>
-						</div>
-					</div>
-				))
-			) : (
-                <h1>No hay pendientes</h1>
+            <div className='container-pendientes'>
+                <input className='inputPendiente' disabled={errorLocal.length} placeholder='Enter the title of the pending here' formAction='submit' ref={pendiente}></input>
+                {pendientes.length > 0 ? (
+                    pendientes.map((el, index) => (
+                        <div className={`pendiente ${el.estado === 'PENDING' ? 'pending' : el.estado === 'EN PROGRESO' ? 'ongoing' : 'done'}`} key={index}>
+                            <h1 id='pendiente-name'>{el.name}</h1>
+                            <div className='stateAndButtons center'>
+                                <h1>{el.estado}</h1>
+                                <div className='icons'>
+                                    <FaCheck id='icon' onClick={() => terminarPendiente(el)} />
+                                    <FaEdit id='icon' />
+                                    <FaUndoAlt id='icon' onClick={() => desacompletarPendiente(el)} />
+                                    <FaTrash onClick={() => deletePendiente(el)} id='icon' />
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <h1 className='center-text'>There is nothing pending</h1>
                 )}
-		</div>
-                </form>
-	);
+            </div>
+        </form>
+    );
 };
