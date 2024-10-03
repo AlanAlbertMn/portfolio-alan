@@ -18,7 +18,7 @@ export const Home = () => {
 					<div className='col'>
 						<h2>Welcome to Alan Albert's portfolio</h2>
 						<br />
-						<p>-Alan Albert</p>
+						<p>-Full Stack Engineer</p>
 					</div>
 					<div className='col'>
 						<img className='animate__animated animate__fadeIn logoHome' src={whiteLogo} alt="Alan Albert's logo" />
