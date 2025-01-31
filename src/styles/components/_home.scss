@@ -2,7 +2,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $white;
-	height: 5in;
+	display: flex;
+	height: 90vh;
 }
 
 .fluid-section-alt{
@@ -17,6 +18,7 @@
 	align-items: center;
 	display: flex;
 	grid-template-columns: 1.3fr 1fr;
+	gap: 10%;
 	justify-content: space-around;
 	margin: 0 5%;
 	& img{
@@ -29,7 +31,7 @@
 }
 
 .col{
-	text-align: left;
+	text-align: justify;
 	margin: 5% 0;
 	// margin: 10% 0 10% 0;
 	font-size: 25px;

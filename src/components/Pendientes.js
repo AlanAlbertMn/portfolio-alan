@@ -55,6 +55,13 @@ export const Pendientes = () => {
         })
     }
 
+    const editPending = (element) => {
+        const pendingToEdit = pendientes.find((p) => p._id == element._id)
+        console.log(pendingToEdit._id);
+        // axios.put(`http://localhost:4000/pendientes/edit/${element._id}`, {name: pendiente.current.value}).then(() => getPendientes())
+        // pendiente.current.value = '';
+    }
+
     const terminarPendiente = (elemento) => {
         if (elemento.estado !== 'DONE') {
             axios.put(`http://localhost:4000/pendientes/completar/${elemento._id}`).then(() => getPendientes())
@@ -97,12 +104,15 @@ export const Pendientes = () => {
                         {
                             pendientes.map((el, index) => (
                                 <div className={`pendiente ${el.estado === 'PENDING' ? 'pending' : el.estado === 'EN PROGRESO' ? 'ongoing' : 'done'}`} key={index}>
-                                    <h1 id='pendiente-name'>{el.name}</h1>
+                                    <div className='pends'>
+                                        <h1 id='pendiente-name'>{el.name}</h1>
+                                        {/* <input id='pendiente-name' type='text' value={el.name}/> */}
+                                    </div>
                                     <div className='stateAndButtons center'>
-                                        <h1>{el.estado}</h1>
+                                        <h2>{el.estado}</h2>
                                         <div className='icons'>
                                             <FaCheck id='icon' onClick={() => terminarPendiente(el)} />
-                                            <FaEdit id='icon' />
+                                            <FaEdit id='icon' onClick={() => editPending(el)}/>
                                             <FaUndoAlt id='icon' onClick={() => desacompletarPendiente(el)} />
                                             <FaTrash onClick={() => deletePendiente(el)} id='icon' />
                                         </div>

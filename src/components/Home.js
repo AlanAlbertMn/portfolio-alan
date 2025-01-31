@@ -16,9 +16,14 @@ export const Home = () => {
 				<div className='two-divider'>
 					{/* <div></div> */}
 					<div className='col'>
-						<h2>Welcome to Alan Albert's portfolio</h2>
-						<br />
-						<p>-Full Stack Engineer</p>
+						<h1>Welcome to my portfolio!</h1>
+						<br/>
+						<p>My name is Alan Albert and Software engineer with 3.5 years of experience in full stack engineering, 
+							very adept in JavaScript and its frameworks such as React and Node, part of the release engineering team 
+							for a financial services platform and main developer on a leading companxy in the financial and insurance, 
+							as well as in the restaurant industry. Worked with agile methodologies within projects that required sudden 
+							changes along his career. Knows how to be a team-player and is also responsible enough to deliver tasks by himself. 
+							Analytic and problem-solver, also has a pending plan for creating videogames in Unity.</p>
 					</div>
 					<div className='col'>
 						<img className='animate__animated animate__fadeIn logoHome' src={whiteLogo} alt="Alan Albert's logo" />

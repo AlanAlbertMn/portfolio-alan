@@ -1,3 +1,5 @@
-# Portafolio personal de Alan Albert
+# Alan Albert personal portfolio
 
-### Dentro de este repositorio guardaré los proyectos, cambios y demás situaciones que cambien en mi vida con el paso del tiempo.
+### Hello, welcome to my portfolio, my name is Alan Albert and I specialize as **Full Stack Engineer**.
+
+### Currently, working on projects related to finance and restaurants. 
