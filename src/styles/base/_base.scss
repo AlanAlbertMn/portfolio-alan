@@ -1,7 +1,7 @@
 * {
 	// font-family: Helvetica, Arial, sans-serif;
-	font-family: miFuente;
-	// font-weight: 100;
+	font-family: miFuente, Arial, sans-serif;
+	font-weight: 300;
 	margin: 0px;
 	box-sizing: border-box;
 }
@@ -47,8 +47,8 @@ body {
 
 @font-face {
 	font-family: miFuente;
-	src: url('../../assets/BigShouldersText-VariableFont_wght.ttf')
+	src: url('../../assets/Roboto-VariableFont_wdth\,wght.ttf')
 			format('woff2 supports variations'),
-		url('../../assets/BigShouldersText-VariableFont_wght.ttf')
+		url('../../assets/Roboto-VariableFont_wdth\,wght.ttf')
 			format('woff2-variations');
 }
