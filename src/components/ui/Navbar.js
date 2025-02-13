@@ -10,7 +10,7 @@ export const Navbar = () => {
 	const linksDisplayClick = () => {
 		setLinksDisplay(!linksDisplay);
 	};
-	
+
 	const desactivarlinksDisplay = () => {
 		setLinksDisplay(false);
 	};
@@ -24,7 +24,7 @@ export const Navbar = () => {
 					onClick={linksDisplayClick}
 				/>
 				<Link id='home' to='/home'>
-					<FaHome className='nav-item' size={35} onClick={desactivarlinksDisplay}/>
+					<FaHome className='nav-item' size={35} onClick={desactivarlinksDisplay} />
 				</Link>
 			</div>
 			{linksDisplay && (
@@ -45,13 +45,15 @@ export const Navbar = () => {
 			)}
 			<div>
 				<Link to='/home'>
-				<img id='logo' src={whiteLogo} alt='Portfolio Logo'  onClick={desactivarlinksDisplay}/>
+					<img id='logo' src={whiteLogo} alt='Portfolio Logo' onClick={desactivarlinksDisplay} />
 				</Link>
 			</div>
 			<div className='options flex center'>
-				<Link id='contacto' className='nav-text-link' to={{pathname:'/home', hash:'#footer'}}>
+				<button className='nav-text-link btn'
+					onClick={() => document.getElementById('footer')?.scrollIntoView({behavior: 'smooth'})}
+				>
 					CONTACT
-				</Link>
+				</button>
 			</div>
 		</div>
 	);

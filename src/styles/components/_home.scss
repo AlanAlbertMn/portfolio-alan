@@ -18,9 +18,9 @@
 	align-items: center;
 	display: flex;
 	grid-template-columns: 1.3fr 1fr;
-	gap: 10%;
-	justify-content: space-around;
-	margin: 0 5%;
+	gap: 3%;
+	justify-content: space-evenly;
+	padding: 0 5%;
 	& img{
 		max-width: 300px;
 	}
@@ -36,7 +36,6 @@
 	// margin: 10% 0 10% 0;
 	font-size: 25px;
 	h2{
-		
 		font-weight: bold;
 	}
 }
@@ -61,7 +60,54 @@
 
 .topTechs {
 	font-size: xx-large;
-	padding-top: 5%;
+	padding: 2.5% 0;
+}
+
+.projects {
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+
+.repoDivider{
+	display: flex;
+	justify-content: space-around;
+	a {
+		font-weight: bolder;
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.repoDividerAlt{
+	display: flex;
+	justify-content: space-around;
+	a {
+		font-weight: bolder;
+		text-decoration: none;
+		color: $primary;
+	}
+}
+
+.screenshot {
+	min-width: 800px;
+}
+
+#spotifyDiv {
+	// background-color: #1db954;
+	// background-color: $secondary;
+	background-image: linear-gradient($secondary, $primary);
+}
+
+#videogameDiv {
+	background-color: $primary;
+	// background-image: linear-gradient($secondary);
+}
+
+#dcolorDiv {
+	background-image: linear-gradient($primary, $secondary);
+	// background-image: linear-gradient($secondary, $primary);
+	// background-color: $secondary;
 }
 
 #alanImg {
@@ -69,7 +115,6 @@
 }
 
 #footer{
-	background-color: $gray;
 	color: $white;
 	height: 10rem;
 	text-align: center;
