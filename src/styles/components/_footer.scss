@@ -1,6 +1,6 @@
 #footer {
-	background-color: $white;
-	color: $primary;
+	background-color: $primary;
+	color: $white;
 	height: max-content;
 }
 
@@ -17,7 +17,7 @@
 	// width: 100%;
 	& a{
 		// background-color: red;
-		color: $primary;
+		color: $white;
 		text-decoration: none;
 	}
 }
@@ -37,6 +37,5 @@
 }
 
 .small-title{
-	font-weight: bold;
 	font-size: 35px;
 }

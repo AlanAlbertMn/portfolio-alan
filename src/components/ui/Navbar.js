@@ -35,12 +35,9 @@ export const Navbar = () => {
 					<Link className='nav-text-link' to='/pendientes' onClick={desactivarlinksDisplay}>
 						Checklist
 					</Link>
-					<Link className='nav-text-link' to='/mapchart' onClick={desactivarlinksDisplay}>
-						MapChart
-					</Link>
-					<Link className='nav-text-link' to='/proyectos' onClick={desactivarlinksDisplay}>
+					{/* <Link className='nav-text-link' to='/proyectos' onClick={desactivarlinksDisplay}>
 						Random
-					</Link>
+					</Link> */}
 				</div>
 			)}
 			<div>

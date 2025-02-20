@@ -1,5 +1,5 @@
 .nav-container {
-	background-image: linear-gradient($primary, $secondary, $primary);
+	background-image: linear-gradient($secondary, $primary);
 	color: $white;
 	display: flex;
 	align-items: center;
@@ -23,7 +23,7 @@
 	box-sizing: content-box;
 	padding: 10%;
 	&:hover {
-		color: $primary;
+		color: $gray;
 	}
 }
 
@@ -52,19 +52,23 @@
 }
 
 .nav-text-link {
+	background-color: $secondary;
 	color: $white;
 	font-size: x-large;
 	font-weight: 500;
 	text-decoration: none;
-	margin: 0;
 	&:hover {
-		color: $primary;
+		background-color: $primary;
+		color: $gray;
 	}
 }
 
 .btn {
 	border: none;
     background: none;
+	&:hover{
+		background: none;
+	}
 }
 
 .nav-dropdown {

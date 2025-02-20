@@ -8,12 +8,12 @@ export const Footer = () => {
 			<div className='two-divider-footer'>
 				<div className='col'>
 					<h5 className='small-title'>About me</h5>
-					<>
-						{/* <img src={logoCirc} alt='logo Alan Albert' height='40px' /> */}
+					<div className='two-divider'>
+						<img src={logoCirc} alt='logo Alan Albert' height='40px' />
 						<p className='paragraph'>
 							Full Stack Engineer specialized on React and Node.js, AWS, SQL
 						</p>
-					</>
+					</div>
 				</div>
 				<div className='col redes'>
 					<h5 className='small-title'>Contact</h5>
