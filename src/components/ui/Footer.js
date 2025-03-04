@@ -7,7 +7,6 @@ export const Footer = () => {
 		<footer id='footer'>
 			<div className='two-divider-footer'>
 				<div className='col'>
-					<h5 className='small-title'>About me</h5>
 					<div className='two-divider'>
 						<img src={logoCirc} alt='logo Alan Albert' height='40px' />
 						<p className='paragraph'>

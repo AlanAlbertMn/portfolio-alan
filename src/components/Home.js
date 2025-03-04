@@ -9,6 +9,10 @@ import logo6 from '../assets/nodeLogo.png';
 import logo7 from '../assets/aws_Logo.png';
 import logo8 from '../assets/python-logo.png';
 
+import { FaAddressCard } from "react-icons/fa";
+import { GrProjects } from "react-icons/gr";
+import { VscPreview } from "react-icons/vsc";
+
 import rawgScreenshot from '../assets/rawgscreenshot.png';
 import dcolorScreenshot from '../assets/dcolorscreenshot.png';
 import spotifyScreenshot from '../assets/spotifyScreenshot.png';
@@ -39,18 +43,35 @@ export const Home = () => {
 					</div>
 				</div>
 			</section>
-			{/* <section className='fluid-section-alt'>
-				<h1 className='topTechs'>Languages and technologies</h1>
-				<div className='logosDiv'>
-					<img src={logo1} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse codeLogo' />
-					<img src={logo2} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-1s codeLogo-alt' />
-					<img src={logo4} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-2s codeLogo' />
-					<img src={logo5} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-3s codeLogo-alt' />
-					<img src={logo6} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-4s codeLogo' />
-					<img src={logo7} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-5s codeLogo-alt' />
-					<img src={logo8} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-5s codeLogo' />
+			<section id='three-cols' className='flex fluid-section-alt'>
+				<div className='box'>
+					<div className='two-divider'>
+						<FaAddressCard size='25%'/>
+						<h1 className='bold'>CONTACT</h1>
+					</div>
+					<p>
+						Feel free to give me a call to ask more about my expertise and abilities
+					</p>
 				</div>
-			</section> */}
+				<div className='box'>
+				<div className='two-divider'>
+					<GrProjects size='20%'/>
+					<h1 className='bold'>PROJECTS</h1>
+				</div>
+					<p>
+						Feel free to give me a call to ask more about my expertise and abilities
+					</p>
+				</div>
+				<div className='box'>
+				<div className='two-divider'>
+					<VscPreview size='25%'/>
+					<h1 className='bold'>BACKGROUND</h1>
+				</div>
+					<p>
+						Explore more of my career, where I display my experience and the projects I have been involved in
+					</p>
+				</div>
+			</section>
 			<section className='projects flex'>
 				<div className='two-divider' id='spotifyDiv'>
 					<div className='col'>
@@ -61,19 +82,19 @@ export const Home = () => {
 							The front-end was developed completely from scratch.
 						</p>
 						<div className='repoDivider'>
-							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp'>Repository</a>
-							<a className='bold' target="_blank" href='http://www.github.com/spotifyrunningpage'>Live demo</a>
+							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp' rel="noreferrer">Repository</a>
+							<a className='bold' target="_blank" href='http://www.github.com/spotifyrunningpage' rel="noreferrer">Live demo</a>
 						</div>
 					</div>
 					<div className='col'>
-						<img className='screenshot' src={spotifyScreenshot} />
+						<img className='screenshot' alt='spotify Screenshot' src={spotifyScreenshot} />
 					</div>
 				</div>
 			</section>
 			<section className='projects flex'>
 				<div className='two-divider' id='videogameDiv'>
 					<div className='col'>
-						<img className='screenshot' src={rawgScreenshot} />
+						<img className='screenshot' alt='Rawg site screenshot' src={rawgScreenshot} />
 					</div>
 					<div className='col'>
 						<h1 className='bold'>RAWG App</h1>
@@ -83,8 +104,8 @@ export const Home = () => {
 							Besides the information from the API's database, the front-end was developed personally.
 						</p>
 						<div className='repoDivider'>
-							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp'>Repository</a>
-							<a className='bold' target="_blank" href='http://www.github.com/spotifyrunningpage'>Live demo</a>
+							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp' rel="noreferrer">Repository</a>
+							<a className='bold' target="_blank" href='http://www.github.com/spotifyrunningpage' rel="noreferrer">Live demo</a>
 						</div>
 					</div>
 				</div>
@@ -99,13 +120,25 @@ export const Home = () => {
 							Besides the information from the API's database, the front-end was developed personally.
 						</p>
 						<div className='repoDivider'>
-							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp'>Repository</a>
-							<a className='bold' target="_blank" href='http://www.github.com/spotifyrunningpage'>Live demo</a>
+							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp' rel="noreferrer">Repository</a>
+							<a className='bold' target="_blank" href='http://www.github.com/spotifyrunningpage' rel="noreferrer">Live demo</a>
 						</div>
 					</div>
 					<div className='col'>
-						<img className='screenshot' src={dcolorScreenshot} />
+						<img className='screenshot' alt='D-color project screenshot' src={dcolorScreenshot} />
 					</div>
+				</div>
+			</section>
+			<section className='fluid-section-alt'>
+				<h1 className='topTechs'>Languages and technologies</h1>
+				<div className='logosDiv'>
+					<img src={logo1} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse codeLogo' />
+					<img src={logo2} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-1s codeLogo-alt' />
+					<img src={logo4} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-2s codeLogo' />
+					<img src={logo5} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-3s codeLogo-alt' />
+					<img src={logo6} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-4s codeLogo' />
+					<img src={logo7} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-5s codeLogo-alt' />
+					<img src={logo8} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-5s codeLogo' />
 				</div>
 			</section>
 		</>

@@ -8,10 +8,42 @@
 
 .fluid-section-alt{
 	background-color: $white;
-	color: $gray;
+	color: $secondary;
 	text-align: center;
 	// height: 25em;
-	height: 70vh;
+	height: 60vh;
+}
+
+.box {
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px $primary;
+	height: 60%;
+	padding: 2rem;
+	max-width: 25%;
+	cursor: pointer;
+	.two-divider {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-bottom: 3rem;
+	}
+	&:hover {
+		box-shadow: 2px 2px 20px $secondary;
+	}
+}
+
+#three-cols{
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 5%;
+	gap: 10%;
+	h1 { 
+		display: inline;
+		color: $primary;
+	}
+	p {
+		text-align: justify;
+	}
 }
 
 .two-divider {
@@ -75,21 +107,14 @@
 	display: flex;
 	justify-content: space-around;
 	a {
-		background-color: rgba($color: $white, $alpha: 0.5);
+		background-color: $attention;
 		border-radius: 25px;
 		padding: 2% 5%;
-		color: $primary;
+		color: $white;
 		text-decoration: none;
-	}
-}
-
-.repoDividerAlt{
-	display: flex;
-	justify-content: space-around;
-	a {
-		font-weight: bolder;
-		text-decoration: none;
-		color: $primary;
+		&:hover {
+			background-color: rgba($color: $attention, $alpha: 0.8);
+		}
 	}
 }
 
