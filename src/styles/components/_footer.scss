@@ -1,41 +1,35 @@
 #footer {
 	background-color: $primary;
 	color: $white;
-	height: max-content;
 }
 
 .two-divider-footer {
 	display: flex;
-	padding-left: 5%;
-	justify-content: space-between;
-	// & img{
-	// 	max-width: 300px;
-	// }
+	justify-content: space-around;
 }
 
-.redes{
-	// width: 100%;
-	& a{
+.redes {
+	& a {
 		// background-color: red;
 		color: $white;
 		text-decoration: none;
 	}
 }
 
-.img-text{
+.img-text {
 	align-items: center;
 	display: flex;
-	gap: 5%;
+	gap: 1rem;
 	margin: 4% 0;
-	width: 500px;
+	padding: 0 30% 0 0;
 }
 
-@media (max-width: 750px) {
-	img{
-	display: none;
-	}
-}
-
-.small-title{
+.small-title {
 	font-size: 35px;
+}
+
+@media (max-width:500px) {
+	#logo {
+		display: none;
+	}
 }
