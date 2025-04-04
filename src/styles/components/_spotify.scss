@@ -1,0 +1,35 @@
+.container {
+	align-items: center;
+	margin: 2em 1em;
+	justify-content: center;
+}
+
+.albums {
+	margin: 2% 1%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.album-container {
+	text-align: center;
+	height: 25em;
+	width: 100%;
+	& a img {
+		max-height: 300px;
+		max-width: 350px;
+	}
+}
+
+#div-busqueda {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+}
+
+#busqueda {
+	font-size: xx-large;
+	margin: 0 auto;
+	text-align: center;
+	width: 96%;
+}

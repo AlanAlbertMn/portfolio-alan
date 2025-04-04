@@ -1,0 +1,206 @@
+.fluid-section{
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $white;
+	display: flex;
+	height: 90vh;
+}
+
+.fluid-section-alt{
+	background-color: $white;
+	color: $secondary;
+	text-align: center;
+	// height: 25em;
+	// height: 60vh;
+}
+
+.box {
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px $primary;
+	height: 60%;
+	padding: 2rem;
+	max-width: 25%;
+	cursor: pointer;
+	.two-divider {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-bottom: 1.5rem;
+	}
+	&:hover {
+		box-shadow: 2px 2px 20px $secondary;
+	}
+}
+
+.subtitle{
+	font-size: 1.8vmax;
+}
+
+.icon {
+	height: 25%;
+	width: 25%;
+}
+
+#three-cols{
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 5%;
+	gap: 10%;
+	h1 { 
+		display: inline;
+		color: $primary;
+	}
+	p {
+		text-align: justify;
+	}
+}
+
+.two-divider {
+	align-items: center;
+	display: flex;
+	grid-template-columns: 1.3fr 1fr;
+	gap: 7%;
+	justify-content: space-evenly;
+	padding: 0 5%;
+	& img{
+		max-width: 30%;
+	}
+}
+
+.title{
+	font-size: 3vmax;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.col{
+	font-size: 2vmax;
+	line-height: 1.4em;
+	h2{
+		font-weight: bold;
+	}
+}
+
+.codeLogo{
+	max-height: 80px;
+	margin-top: -5%;
+}
+
+.codeLogo-alt{
+	max-height: 80px;
+	margin-top: 5%;
+}
+
+.logosDiv{
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: space-evenly;
+	padding: 4% 0;
+}
+
+.topTechs {
+	color: $primary;
+	font-size: xx-large;
+	padding: 5% 0 0;
+}
+
+.projects {
+	height: 65hv;
+}
+
+.repoDivider{
+	display: flex;
+	justify-content: space-around;
+	a {
+		background-color: $attention;
+		border-radius: 25px;
+		padding: 2% 5%;
+		color: $white;
+		text-decoration: none;
+		&:hover {
+			background-color: rgba($color: $attention, $alpha: 0.8);
+		}
+	}
+}
+
+.screenshot {
+	min-width: 600px;
+}
+
+#spotifyDiv {
+	background-image: linear-gradient($primary, $secondary);
+	padding: 3rem 2rem 1.5rem;
+}
+
+#videogameDiv {
+	background-color: $secondary;
+	padding: 1.5rem 2rem;
+}
+
+#dcolorDiv {
+	background-image: linear-gradient($secondary, $primary);
+	padding: 3rem 2rem;
+}
+
+#bio{
+	background-color: rgba($color: $primary, $alpha: 0.5);
+	border-radius: 25px;
+	padding: 6% 2% 3%;
+}
+
+#alanImg {
+	border-radius: 15%;
+	max-width: 300px;
+}
+
+:root {
+  --animate-delay: 0.5s;
+}
+
+@media (max-width:500px) {
+	#spotifyDiv {
+		flex-direction: column;
+		width: 100%;
+	}
+	#videogameDiv {
+		flex-direction: column-reverse;
+	}
+	#dcolorDiv {
+		flex-direction: column;
+	}
+
+	#alanImg {
+		display: none;
+	}
+
+	.screenshot {
+		margin-top: 2rem;
+		min-width: 100%;
+	}
+
+	.logosDiv {
+		flex-direction: column;
+	}
+
+	.codeLogo, .codeLogo-alt {
+		margin: 1rem 0;
+	}
+
+	#three-cols{
+		flex-direction: column;
+		gap: 2rem;
+		padding: 2rem 0;
+		font-size: 2.5vmax;
+		.subtitle {
+			font-size: 3vmax
+		}
+		.box {
+			max-width: 80%;
+		}
+		.icon {
+			height: 20%;
+			width: 20%;
+		}
+	}
+}

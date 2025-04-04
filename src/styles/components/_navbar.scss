@@ -1,0 +1,98 @@
+.nav-container {
+	background-image: linear-gradient($secondary, $primary);
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	height: 5%;
+	z-index: 1;
+}
+
+#home {
+	color: $white;
+}
+
+#logo {
+	width: 2.5em;
+}
+
+.nav-item {
+	cursor: pointer;
+	box-sizing: content-box;
+	padding: 10%;
+	&:hover {
+		color: $gray;
+	}
+}
+
+#links {
+	background-color: $primary;
+	// color: $white;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 4.55rem;
+	left: 0;
+	width: 100%;
+	max-width: 20rem;
+	a {
+		// max-width: 20rem;
+		color: $white;
+		padding: 4% 15%;
+		// margin: 4% 10%;
+		// width: 100%;
+		justify-content: flex-start;
+		&:hover {
+			background-color: $secondary;
+			color: $white;
+		}
+	}
+}
+
+.nav-text-link {
+	background-color: $secondary;
+	color: $white;
+	font-size: x-large;
+	font-weight: 500;
+	text-decoration: none;
+	&:hover {
+		background-color: $primary;
+		color: $gray;
+	}
+}
+
+.btn {
+	border: none;
+    background: none;
+	&:hover{
+		background: none;
+	}
+}
+
+.nav-dropdown {
+	background-color: $gray;
+	border: 0;
+	color: $white;
+	/* for Firefox */
+	-moz-appearance: none;
+	/* for Safari, Chrome, Opera */
+	-webkit-appearance: none;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.options {
+	justify-content: space-evenly;
+	width: 12rem;
+}
+
+@media (max-width: 750px) {
+	#home,
+	#contacto {
+		display: none;
+	}
+}
+
