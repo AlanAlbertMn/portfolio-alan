@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedinIn, FaMailBulk, FaPhone } from 'react-icons/fa';
+import { FaLinkedinIn, FaPhone } from 'react-icons/fa';
 import logoCirc from '../../assets/LogoAASF.png';
 
 export const Footer = () => {
@@ -12,7 +12,7 @@ export const Footer = () => {
 							Full Stack Engineer specialized on React and Node.js, AWS, SQL
 						</p>
 				</div>
-				<div className='col redes'>
+				<div className='col flex redes'>
 					<div className='img-text'>
 						<FaLinkedinIn />
 						<a
@@ -28,7 +28,6 @@ export const Footer = () => {
 						<a href='tel:+522227769031'>(+52) 222 776 9031</a>
 					</div>
 					<div className='img-text'>
-						<FaMailBulk />
 						<a href='mailto:someone@example.com'>alanalbertmn@gmail.com</a>
 					</div>
 				</div>

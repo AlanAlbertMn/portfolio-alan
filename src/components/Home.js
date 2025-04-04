@@ -18,6 +18,7 @@ import dcolorScreenshot from '../assets/dcolorscreenshot.png';
 import spotifyScreenshot from '../assets/spotifyScreenshot.png';
 
 import polygonSvg from '../assets/low-poly-grid2.svg';
+import { goToContact } from '../helpers/goToContact';
 
 export const Home = () => {
 	return (
@@ -27,7 +28,7 @@ export const Home = () => {
 					<div className='col animate__animated animate__fadeInLeft' id='bio'>
 						<h1 className='title'>Welcome to my portfolio!</h1>
 						<p className='paragraph'>
-							My name is Alan Albert and I am a software engineer with 3.5 years of experience in the full stack industry.
+							My name is Alan Albert and I am a software engineer with 3.8 years of experience in the full stack industry.
 							Very adept in JavaScript and its frameworks such as React and Node.js.
 						</p>
 						{/* <p className='paragraph'>
@@ -44,10 +45,10 @@ export const Home = () => {
 				</div>
 			</section>
 			<section id='three-cols' className='flex fluid-section-alt'>
-				<div className='box'>
+				<div className='box' onClick={goToContact}>
 					<div className='two-divider'>
-						<FaAddressCard size='25%'/>
-						<h1 className='bold'>CONTACT</h1>
+						<FaAddressCard className='icon'/>
+						<h1 className='subtitle bold'>CONTACT</h1>
 					</div>
 					<p>
 						Feel free to give me a call to ask more about my expertise and abilities
@@ -55,8 +56,8 @@ export const Home = () => {
 				</div>
 				<div className='box'>
 				<div className='two-divider'>
-					<GrProjects size='20%'/>
-					<h1 className='bold'>PROJECTS</h1>
+					<GrProjects className='icon'/>
+					<h1 className='subtitle bold'>PROJECTS</h1>
 				</div>
 					<p>
 						Feel free to give me a call to ask more about my expertise and abilities
@@ -64,8 +65,8 @@ export const Home = () => {
 				</div>
 				<div className='box'>
 				<div className='two-divider'>
-					<VscPreview size='25%'/>
-					<h1 className='bold'>BACKGROUND</h1>
+					<VscPreview className='icon'/>
+					<h1 className='subtitle bold'>BACKGROUND</h1>
 				</div>
 					<p>
 						Explore more of my career, where I display my experience and the projects I have been involved in
@@ -82,8 +83,8 @@ export const Home = () => {
 							The front-end was developed completely from scratch.
 						</p>
 						<div className='repoDivider'>
-							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp' rel="noreferrer">Repository</a>
-							<a className='bold' target="_blank" href='http://www.github.com/spotifyrunningpage' rel="noreferrer">Live demo</a>
+							<a className='bold' target="_blank" href='https://github.com/AlanAlbertMn/spotify-app' rel="noreferrer">Repository</a>
+							<a className='bold' target="_blank" href='https://alanalbertmn.github.io/spotify-app/' rel="noreferrer">Live demo</a>
 						</div>
 					</div>
 					<div className='col'>

@@ -1,0 +1,1 @@
+export const goToContact = () => document.getElementById('footer')?.scrollIntoView({behavior: 'smooth'})

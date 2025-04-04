@@ -3,6 +3,7 @@ import { FaHome } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import whiteLogo from '../../assets/LogoAASF.png'
+import { goToContact } from '../../helpers/goToContact';
 
 export const Navbar = () => {
 	const [linksDisplay, setLinksDisplay] = useState(false);
@@ -47,7 +48,7 @@ export const Navbar = () => {
 			</div>
 			<div className='options flex center'>
 				<button className='nav-text-link btn'
-					onClick={() => document.getElementById('footer')?.scrollIntoView({behavior: 'smooth'})}
+					onClick={goToContact}
 				>
 					CONTACT
 				</button>
