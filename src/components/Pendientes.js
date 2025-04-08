@@ -56,7 +56,7 @@ export const Pendientes = () => {
     }
 
     const editPending = (element) => {
-        const pendingToEdit = pendientes.find((p) => p._id == element._id)
+        const pendingToEdit = pendientes.find((p) => p._id === element._id)
         console.log(pendingToEdit._id);
         // axios.put(`http://localhost:4000/pendientes/edit/${element._id}`, {name: pendiente.current.value}).then(() => getPendientes())
         // pendiente.current.value = '';

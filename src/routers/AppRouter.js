@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Home } from '../components/Home';
-import { MapChart } from '../components/MapChart';
 import { Pendientes } from '../components/Pendientes';
 import { SpotifyScreen } from '../components/SpotifyScreen';
 import { Footer } from '../components/ui/Footer';
@@ -17,7 +16,6 @@ export const AppRouter = () => {
 			<Routes>
 				<Route path='/spotify' element={<SpotifyScreen />} />
 				<Route path='/pendientes' element={<Pendientes />} />
-				<Route path='/mapchart' element={<MapChart />} />
 				<Route path='/home' element={<Home />} />
 				<Route path='*' element={<Navigate to='/home' />} />
 			</Routes>
