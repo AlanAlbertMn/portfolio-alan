@@ -28,8 +28,7 @@ export const Home = () => {
 					<div className='col animate__animated animate__fadeInLeft' id='bio'>
 						<h1 className='title'>Welcome to my portfolio!</h1>
 						<p className='paragraph'>
-							My name is Alan Albert and I am a software engineer with 3.8 years of experience in the full stack industry.
-							Very adept in JavaScript and its frameworks such as React and Node.js.
+							My name is Alan Albert and I am a Full Stack Software Engineer with 4 years of experience building scalable, high-performance web applications. Specialized in React.js, TypeScript, and modern UI development, with proven ability to optimize performance, improve user experience, and deliver features at scale in agile teams.
 						</p>
 						{/* <p className='paragraph'>
 							Worked with agile methodologies within projects that required sudden
@@ -78,9 +77,7 @@ export const Home = () => {
 					<div className='col'>
 						<h1 className='bold'>Spotify App</h1>
 						<p className='paragraph'>
-							Spotify app was developed consuming a third party API that provides real Spotify data.
-							A personal token was added into the environment variables to consume the API.
-							The front-end was developed completely from scratch.
+						The Spotify application was developed utilizing a third-party API that delivers authentic Spotify data. A personal token was incorporated into the environment variables to facilitate API access. Additionally, the front-end was entirely built from the ground up.
 						</p>
 						<div className='repoDivider'>
 							<a className='bold' target="_blank" href='https://github.com/AlanAlbertMn/spotify-app' rel="noreferrer">Repository</a>
@@ -100,9 +97,10 @@ export const Home = () => {
 					<div className='col'>
 						<h1 className='bold'>RAWG App</h1>
 						<p className='paragraph'>
-							This app was developed consuming a third party API that provides real Spotify data.
-							A personal token has been added into the environment variables to consume the API.
-							Besides the information from the API's database, the front-end was developed personally.
+						The RAWG application is a front-end platform that integrates the third-party RAWG API. 
+						It features filters for genres and platforms, providing access to video games across all systems, 
+						including Xbox, PlayStation 5, and PC. Developed from the ground up, the application utilizes Redux 
+						for state management, incorporating authentication for user registration and login.
 						</p>
 						<div className='repoDivider'>
 							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp' rel="noreferrer">Repository</a>
@@ -116,9 +114,10 @@ export const Home = () => {
 					<div className='col'>
 						<h1 className='bold'>D-Color (e-catalog)</h1>
 						<p className='paragraph'>
-							This app was developed consuming a third party API that provides real Spotify data.
-							A personal token has been added into the environment variables to consume the API.
-							Besides the information from the API's database, the front-end was developed personally.
+						The D-Color project is a website designed to showcase and sell makeup products online. 
+						It features a shopping cart functionality and integrates with a third-party database known as the “Makeup API.” 
+						Currently, efforts are underway to implement a payment processing system and utilize MongoDB for storing orders, 
+						invoices, and other related data.
 						</p>
 						<div className='repoDivider'>
 							<a className='bold' target="_blank" href='http://www.github.com/SpotifyApp' rel="noreferrer">Repository</a>
@@ -131,7 +130,7 @@ export const Home = () => {
 				</div>
 			</section>
 			<section className='fluid-section-alt'>
-				<h1 className='topTechs'>Languages and technologies</h1>
+				<h1 className='topTechs'>Technical skills</h1>
 				<div className='logosDiv'>
 					<img src={logo1} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse codeLogo' />
 					<img src={logo2} alt='logo' className='animate__animated animate__repeat-3 animate__slow animate__pulse animate__delay-1s codeLogo-alt' />
